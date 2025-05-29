@@ -11,7 +11,8 @@ COPY . .
 
 RUN pnpm install
 RUN npx prisma generate
-RUN pnpm run build
+RUN pnpm prisma migrate deploy
 RUN pnpm run seed
+RUN pnpm run build
 
 CMD ["pnpm", "run", "start:prod"]
