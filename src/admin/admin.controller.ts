@@ -59,14 +59,4 @@ export class AdminController {
       dto.newTrainNumber,
     );
   }
-
-  // TODO
-  @Post('stations')
-  createStation() {}
-
-  @Put('stations/:id')
-  updateStation() {}
-
-  @Delete('stations/:id')
-  deleteStation() {}
 }

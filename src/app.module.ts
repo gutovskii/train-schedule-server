@@ -6,11 +6,13 @@ import { SchedulesModule } from './schedules/schedules.module';
 import { AdminModule } from './admin/admin.module';
 import { PrismaModule } from './prisma/prisma.module';
 import { StationsModule } from './stations/stations.module';
+import { configValidationSchema } from './config-validation-schema';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+      validationSchema: configValidationSchema,
     }),
     AuthModule,
     SchedulesModule,

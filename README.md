@@ -45,6 +45,12 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
+## Docker Compose
+```bash
+# docker-compose
+$ docker-compose up --build
+```
+
 ## Test
 
 ```bash
